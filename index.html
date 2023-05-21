@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Mahadik Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer and Analyst</p>
+            <h1>Hi, I'm <span>Sushant Mahadik</h1>
+                <hr>
+            <h2>Analyzing and visualizing data to make better and informed business decisions.</h2>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br><br>
+                <p>From a young age, I’ve always had a sense of motivation and passion driving me forward. Whether it’s exploring unique opportunities, learning additional skills, or meeting new people. Loyalty, Honesty, Initiative, Optimism and Teamwork are the five values I bring to every experience throughout my life on a personal and professional level. To learn more about me, keep exploring my site or reach out directly.</p>
+                <br>
+                <p> I have worked for more than 3 years as a Data Engineer and Data Analyst working with numerous technologies and tools such as Microsoft SQL Server, Microsoft SSIS, Power BI, Excel, and Informatica Master Data Management. Aside from that, I've the Google Data Analytics Professional Certificate and have completed projects in Python, R, SQL, Tableau, Looker, Alteryx, SSRS, and other languages. My past work experience included data transfer, warehousing, and the creation of Excel and Power BI reports. I also negotiated team meetings with clients while working at Accenture, which helped me develop good communication skills.</p>
+                <!--<div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages and Cloud:</span><br>SQL, Python, R, C, C++, VBScript, Azure, AWS (EC2, S3, Lambda, Redshift, DynamoDB)</li>
+                        <li><span>Database and ETL:</span><br>SQL Server, MySQL, MongoDB, PL/SQL, Big Query, Microsoft SSIS, Airflow, Informatica MDM</li>
+                        <li><span>Analytics:</span><br>Tableau, Looker, PowerBI, Microsoft Excel, SSRS, QlikSense, Flourish, Datawrapper</li>
+                        <li><span>Libraries and Tools:</span><br>Pandas, Jupyter, Seaborn, Rshiny, Plotly, JIRA, Microsoft Office, Microsoft Powerpoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Nov 2017 – July 2019</span>
+                            <br>Company :Accenture Services Pvt. Ltd.
+                            <br> Role : Data Engineer and Analyst (Client – Adecco Group)
+                       </li>
+                        <li><span>Aug 2019 - Dec 2020</span>
+                            <br>Company :Accenture Services Pvt. Ltd.
+                            <br>Role: Data Analyst (Client – Mondalez International)</li>
+                     </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Current</span><br>Master of Science, Engineering Management from Northeastern University, Boston, Massachusetts</li>
+                        <li><span>2013-2017</span><br>Bachelor of Engineering, Electronics and Telecommunications form University of Mumbai, India</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Google Data Analytics Professional Certificate</span>
+                        <li><span>Microsoft Azure AZ-900</span></li>
+                    </ul>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Data visualization</h2>
+                <p>I am specialized in collecting, managing, and converting raw data into information that can assist businesses in quickly identifying data trends </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Business Analyst</h2>
+                <p>Derive logical conclusions, develop innovative solutions for operational and strategic changes, and budget and forecasting to ensure that costs do not exceed the limit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>(Interactive) Infographics</h2>
+                <p>Represent data in an inspiring way by using an infographic tools.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/coffee1.jpg">
+                <div class="layer">
+                    <h3>Worldwide Coffee Market Analysis </h3><h3>(Oct 2022 – Dec 2022)</h3>
+                    <h4>R, Dplyr, Tidyr, Tableau, Excel,</h4>
+                    <br>
+                    <p>Performed analysis of Coffee market around the world by collecting data using web scrapping, performing data transformation using R and developing dashboards using Tableau. Bagged the best project award</p>
+                    <a href="https://public.tableau.com/app/profile/sushant.mahadik/viz/Coffee_16845357187480/Story1" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/airbnb1.jpg">
+                <div class="layer">
+                    <h3>AirBnB Listing Price Prediction</h3><h3>Jan 2022 - Mar 2022</h3>
+                    <h4>Python, Pandas, Seaborn, Scikit-learn, Linear Regression, XGBoost, Data Cleaning, Dimension Reduction, PCA.</h4>
+                    <br>
+                    <p>Developed a prediction model to estimate the prices of the AirBnB listings of major cities of United States using linear regression, univariate and multivariate analysis, XGBoost and achieved a r2 score of 89%.</p>
+                    <a href="https://github.com/ShreyaTheHelper/c" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>US Traffic Accidents Analysis</h3><h3>Nov 2021 - Dec 2021</h3>
+                    <h4>Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                    <br>
+                    <p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>mahadik.su@northeastern.edu</p>
+                <br>
+                <p><i class="fas fa-phone-square-alt"></i>+1 (857) 544-8790</p>
+                <br>
+                <p><a href="https://www.linkedin.com/in/sushantmahadik/" target="_blank" style=" color: white;"><i class="fab fa-linkedin"></i> sushantmahadik</a>
+                </p>
+               
+                <a href="images/Sushant Mahadik.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMlYAYIak1UOL2-GsLOuX7DCnTDt7W4kKP_2TEsCMs8BNLGN0Bd5i5sbq4YiF1wpok/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
