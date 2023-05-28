@@ -197,10 +197,13 @@ h2{
 #portfolio{
     padding: 50px 0;
 }
+#myDIV {
+    display: none;
+  }
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 60px;
     margin-top: 50px;
 }
 .work{
@@ -266,6 +269,21 @@ h2{
     transition: background 0.5s;
 }
 .btn:hover{
+    background: #ff004f;
+}
+
+.btn1{
+    display: block;
+    margin: 50px auto;
+    width: 10rem;
+    border:  #fff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: 1px solid #ff004f;
+    transition: background 0.5s;
+}
+.btn1:hover{
     background: #ff004f;
 }
 
@@ -414,4 +432,11 @@ nav .fas{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+h1 .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left:600px;
 }
