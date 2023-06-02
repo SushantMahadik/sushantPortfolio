@@ -265,12 +265,11 @@ h2{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
+    background: #ff004f;
     color:#080808;
     transition: background 0.5s;
 }
-.btn:hover{
-    background: #ff004f;
-}
+
 .btns{
     display: block;
     margin: 50px auto;
@@ -279,12 +278,11 @@ h2{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color:  #ff004f;
+    background: #ff004f;
+    color:#080808;
     transition: background 0.5s;
 }
-.btns:hover{
-    background: #fff;
-}
+
 
 .btn1{
     display: block;
