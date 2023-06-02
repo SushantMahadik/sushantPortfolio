@@ -115,7 +115,7 @@
             </div>
         </div>
         <h1>
-            <button class="btn">See more</button>
+            <button class="btn"  onclick="myFunction()" id="seeMore"  >See more</button>
         </h1>
     </div>
 </div>
@@ -170,6 +170,26 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display == "block") { // `=` to `==` or `===`
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+        var x = document.getElementById("seeMore");
+        console.log('inside ',x.innerHTML);
+        if (x.innerHTML=="Show More")
+        {
+            x.innerHTML = "Show Less";
+        }
+        else if(x.innerHTML=="Show Less"){
+            x.innerHTML = "Show More";
+        }
+      }
 </script>
 
 <script>
