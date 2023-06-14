@@ -7,39 +7,96 @@
     <title>Sushant Mahadik Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <!--<img src="images/back1.jpg">-->
+            
+            
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
-               <!-- <li><a href="#about">About</a></li>-->
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#WorkExperience">Professional Experience</a></li>
+               <!-- <li><a href="#Certification">Certification</a></li> -->
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-       <!---<div class="header-text">
-            <p>Data Engineer and Analyst</p>
-            <h1>Hi, I'm <span>Sushant Mahadik</h1>
-                <hr>
-            <h2>Analyzing and visualizing data to make better and informed business decisions.</h2>
-        </div>-->
+       
         <div class="row">
+            
                 <div class="about-col-1">
                     <br><br><br>
                     <img src="images/Sushant.jpeg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <h1 class="sub-title" font> <span style=color:#ff004f ;>Sushant </span>Mahadik</h1>
                     <br><br>
-                    <p>I'm Sushant Mahadik, a passionate and versatile data professional with a strong background in software development and data analytics. With a Bachelor's degree in Electronics and Telecommunications and a Master's degree in Engineering Management, I bring a unique blend of technical expertise and business acumen to the table. My journey in the industry has equipped me with a diverse skill set, including proficiency in Python, SQL, R, Tableau, and PowerBI. I have a proven track record of leading teams and delivering successful projects, optimizing data processes, and generating valuable insights through data visualization and analysis. 
-                        
-                    <p>As a certified scrum master, I thrive in dynamic and collaborative environments, driving innovation and fostering effective communication across teams. I am passionate about leveraging data-driven strategies to solve complex business challenges and make a meaningful impact. Explore my portfolio to see examples of my work and let's connect to discuss how I can contribute to your data-driven initiatives.<br>
-            </div>
+                    <p>I am Sushant Mahadik, a T-shaped professional with deep expertise in Business Analysis and a broad range of skills in Data Analytics. I have more than 3 years of industry experience, with a proven track record of delivering successful projects and driving data-driven insights for clients. I am skilled in business analysis, product analysis, data analysis, and data visualization. I have hands-on experience using tools like JIRA, Asana, Confluence, Visio, Tableau, PowerBI, and technologies like SharePoint, SQL, Python, and R. I have previously worked at Accenture as a Business Analyst and Data Analytics Engineer. As a Certified Scrum Master (CSM) & Certified Scrum Product Owner (CSPO), I thrive in dynamic and collaborative environments, driving innovation and fostering effective communication across teams. I am passionate about transforming ideas into products and data into insights. Explore my portfolio and let's connect to discuss how I can contribute to your business value!</p> <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certificate')">Certificates</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages and Cloud</span><br>SQL, Python, R, HTML, JavaScript, GCP, Azure, AWS
+                                </li>
+                                <li><span>Database and ETL</span><br> SQL Server, MySQL, EPIC, MDM, Relational Databases, MS SSIS, MS SharePoint, Airflow</li>
+                                <li><span>Analytics</span><br>Tableau, Looker Studio, Microsoft PowerBI, Google Analytics, SAS, MS Excel, MS PowerPoint </li>
+                                <li><span>Libraries and Tools</span><br>JIRA, Asana, Confluence, Visio, Salesforce CRM, SAP ERP, MS Dynamics 365 CRM, MS Office</li>
+                             </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2017 - 2020</span><br>Accenture Services Pvt. Ltd. <br> Business Analyst / Data Analytics Engineer </li>
+                                <li><span>2016 - 2017</span><br>rDNA Corp. <br> Business Development Intern</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Master of Science, Engineering Management <br> Northeastern University, Boston, USA</li>
+                                <li><span>2017</span><br>Bachelor of Engineering, Electronics and Telecommunications <br> University of Mumbai, India</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certificate">
+                            <ul>
+                                <li> Certified Scrum Master (CSM)<br> 
+                                <li>Certified Scrum Product Owner (CSPO)<br> 
+                                <li>Apache Airflow Fundamentals<br> 
+                                <li>Azure AZ-900</li>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
         </div>
     
 </div>
@@ -60,9 +117,10 @@
     </div>
 </div>-->
 <!-- ----------portfolio------------ -->
+<br><br><br><br><br><br><br><br><br><br>
 <div id="projects">
     <div class="container">
-        <h1 class="sub-title">My Projects</h1>
+        <h1 class="sub-title">Projects</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/Coffee2.jpg">
@@ -70,7 +128,7 @@
                     <h3>Worldwide Coffee Market Analysis </h3><!--<h3>(Oct 2022 – Dec 2022)</h3>-->
                     <p> The project explores, analyzes and visualizes the production, consumption, import, export and revenue from coffee around the world.</p>
                     <br>
-                    <h4>Skills: R, Dplyr, Tidyr, Tableau, Excel,</h4>
+                    <h4 style="font-size: medium;">Skills: R, Dplyr, Tidyr, Tableau, Excel,</h4>
                     <!--<br>
                     <p>Performed analysis of Coffee market around the world by collecting data using web scrapping, performing data transformation using R and developing dashboards using Tableau. Bagged the best project award</p>
                     -->
@@ -82,7 +140,7 @@
                 <div class="layer">
                     <h3>AirBnB Listing Price Prediction</h3><!--<h3>Jan 2022 - Mar 2022</h3>-->
                     <p>The purpose of the project is to accurately determine the price of the Airbnb listing in major US cities.</p><br>
-                    <h4>Skills: Python, Pandas, Seaborn, Scikit-learn, Linear Regression, XGBoost, Data Cleaning, Dimension Reduction, PCA.</h4>
+                    <h4 style="font-size: medium;">Skills: Python, Pandas, Seaborn, Scikit-learn, Linear Regression, XGBoost, Data Cleaning, Dimension Reduction, PCA.</h4>
                     <br>
                     <!--
                     <p>Developed a prediction model to estimate the prices of the AirBnB listings of major cities of United States using linear regression, univariate and multivariate analysis, XGBoost and achieved a r2 score of 89%.</p>
@@ -95,7 +153,7 @@
                 <div class="layer">
                     <h3>US Traffic Accidents Analysis</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
                     <p>In depth analysis of traffic accidents in the United States considering various factors such as location, time, climate, visibility and various other fcators.</p><br>
-                    <h4>Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                    <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
                     <br>
                     <!--<p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
                     --><a href="https://github.com/SushantM79/US-Traffic-Accident-Analysis/blob/main/US_Traffic_Accidents.R" target="_blank"><i class="fas fa-external-link-alt"></i></a>
@@ -107,6 +165,7 @@
         </h1>
     </div>
 </div>
+<br><br>
 <div id="myDIV">
     <div class="container">
         <div class="work-list">       
@@ -115,7 +174,7 @@
                     <div class="layer">
                         <h3>Happiness: A Socio-Economic Phenomenon</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
                         <p>The project explores, analyzes and visualizes the factors affecting the happiness index of countries around the world.</p><br>
-                        <h4>Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
                         <br>
                         <!--<p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
                         --><a href="https://sites.google.com/view/project1group1/introduction" target="_blank"><i class="fas fa-external-link-alt"></i></a>
@@ -127,7 +186,7 @@
                         <h3>US-Gun-Violence</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
                         <p>The project explores, analyzes and visualizes the incidences of gun violence in United States.</p>
                         <br>
-                        <h4>Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
                         <!--<br>
                         <p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
                         -->
@@ -140,7 +199,7 @@
                         <h3>Airline-Reservation-System</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
                         
                         <p>The purpose of the database is to maintain the data used to make airline reservation and check for seat occupancy.</p><br>
-                        <h4>Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
                         <br>
                         <!--
                         <p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
@@ -152,7 +211,49 @@
     </div>
 </div>
 
+<!-- -----------WorkExperience---------- -->
+<br><br>
+<div id="WorkExperience">
+    <div class="container">
+        <h1 class="sub-title">Professional Experience</h1>
+        <br>
+        
+           <h1 style="font-size: xx-large;"><span style=color:#ff004f ;>Accenture Services Pvt. Ltd.  </span></h1>
+           <h1 style="font-size: x-large;">  Business Analyst / Data Analytics Engineer </h1><br>
+                <ul>
+                <li> Collaborated with Clients to gather business requirements and convert them into functional tasks. </li>
+                <li> Oversaw the testing of the software application before each release to ensure consistent product quality. </li>
+                <li> Developed the data warehouse for the application and streamlined the data migration.</li>
+                <li> Built dashboards to capture key performance indicators which helped clients make better business decisions.</li>
+                </ul>
+            <br>
+            <h1 style="font-size: xx-large;"><span style=color:#ff004f ;>rDNA Corp. </span> </h1>
+            <h1 style="font-size: x-large;"> Business Development Intern  </h1><br>
+                <ul>
+                <li> Conducted market research to identify potential clients and generate business leads. </li>
+                <li>Developed data-driven marketing strategies to increase customer conversion rate. </li>
+                </ul>
+                 
+        
+    </div>
+</div>
+
+<!-- -----------Certification---------- -->
+<!--<div id="Certification">
+    <div class="container">
+        <h1 class="sub-title">Certificate</h1>
+        <div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Certifications</span><br> Google Data Analytics Professional Certificate <p> Microsoft Azure AZ-900</li>
+                </ul>
+            </div>
+        </div>
+    </div>     
+</div>-->
+
 <!-- ----------contact------------- -->
+<br><br><br><br>
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -162,7 +263,7 @@
                 <br>
                 <p><i class="fas fa-phone-square-alt"></i>+1 (857) 544-8790</p>
                 <br>
-                <p><a href="https://www.linkedin.com/in/sushantmahadik/" target="_blank" style=" color: white;"><i class="fab fa-linkedin"></i> sushantmahadik</a>
+                <p><a href="https://www.linkedin.com/in/sushantmahadik/" target="_blank" style=" color: white;"><i class="fab fa-linkedin"></i> Sushant Mahadik</a>
                 </p>
                 <a href="images/Sushant Mahadik.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -178,6 +279,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 

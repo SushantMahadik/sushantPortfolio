@@ -97,14 +97,14 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
-    margin: 2%;
-    padding: 5%;
+   /* margin: 2%;
+    padding: 5%;*/
     flex-basis: 60%;
     font-size: 105%;
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
@@ -142,6 +142,11 @@ h2{
     margin: 10px 0;
     font-size: 100%;
 }
+
+
+/*  Section 3  */
+
+
 /**/
 .tab-contents ul li span{
     color:#ff004f ;
@@ -381,7 +386,11 @@ nav .fas{
     display: none;
 }
 
+h4{
+    font-size:40px;
+    font-style: bold;
 
+}
 
 @media only screen and (max-width: 600px){
    
